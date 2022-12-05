@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header id="main-header">
+		<div class="container">
+			<h1>Lingxiao Yuan</h1>	
+		</div>
+	</header>
+
+	<nav id="navbar">
+		<div class="container">
+			<ul>
+				<li><a href="index.html">About Me</a></li>
+				<li><a href="blogs.html">Blogs</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="publications.html"><mark>Publications</mark></a></li>
+				<li><a href="photos.html">Photos</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<section class="container">
+		<article class="paper"> 
+			<h3>Towards out of distribution generalization for problems in mechanics </h3>
+			<small>Published on October, 2022</small>
+			<p>There has been a massive increase in research interest towards applying data driven methods to problems in mechanics, with a particular emphasis on using data driven methods for predictive modeling and design of materials with novel functionality. While traditional machine learning (ML) methods have enabled many breakthroughs, they rely on the assumption that the training (observed) data and testing (unseen) data are independent and identically distributed (i.i.d). However, when these standard ML approaches are applied to real world mechanics problems with unknown test environments, they can be very sensitive to data distribution shifts, and can break down when evaluated on test datasets that violate the i.i.d. assumption. In contrast, out-of-distribution (OOD) generalization approaches assume that the data contained in test environments are allowed to shift (i.e., violate the i.i.d. assumption). To date, multiple methods have been proposed to improve the OOD generalization of ML methods. However, most of these OOD generalization methods have been focused on classification problems, driven in part by the lack of benchmark datasets available for OOD regression problems. Thus, the efficiency of these OOD generalization methods on regression problems, which are typically more relevant to mechanics research than classification problems, is unknown. To address this, we perform a fundamental study of OOD generalization methods for regression problems in mechanics. Specifically, we identify three OOD generalization problems: covariate shift, mechanism shift, and sampling bias. For each problem, we create two benchmark examples that extend the Mechanical MNIST dataset collection, and we investigate the performance of popular OOD generalization methods on these mechanics-specific regression problems. Our numerical experiments show that in most cases, while the OOD algorithms perform better compared to traditional ML methods on these OOD generalization problems, there is a compelling need to develop more robust OOD methods that can generalize the notion of invariance across multiple OOD scenarios. Overall, we expect that this study, as well as the associated open access benchmark datasets, will enable further development of OOD methods for mechanics specific regression problems.</p>
+			<a href="https://www.sciencedirect.com/science/article/pii/S0045782522005485" target="_black">Paper</a>
+			<a href="https://github.com/lingxiaoyuan/ood_mechanics" target="_black">Code</a>	
+		</article>
+
+		<article class="paper"> 
+			<h3>Effects of residual stress on the hardness of elastoplastic material under spherical indentation </h3>
+			<small>Published on May, 2020</small>
+			<p>Residual stress can strongly affect the mechanical behaviors of engineering components. In this work, the authors revisit the role of equi-biaxial residual stress in the spherical indentation of elastoplastic solids by the finite element method. When specified residual stress remains in the body, the material hardness and the corresponding indentation depth at the inception of fully plastic deformation are examined for the first time. It is found that the hardness is remarkably dependent on the value of residual stress, especially for materials with a relatively small ratio of modulus to yield strength. Based on the dimensional analysis as well as numerical calculations, explicit expressions of the hardness and the critical indentation depth are generalized with respect to residual stress, indentation modulus, and yield strength. These results can be employed in the analysis and determination of residual stress by spherical indentation tests.</p>	
+			<a href="https://asmedigitalcollection.asme.org/appliedmechanics/article-abstract/87/5/051004/1072610/Effects-of-Residual-Stress-on-the-Hardness-of" target="_black">Paper Link</a>
+			<a href="https://github.com/lingxiaoyuan/abaqus_indent_res" target="_black">Code</a>	
+		</article>
+
+		<article class="paper"> 
+			<h3>A notification of local minimum pressure at deep elastic–plastic indentation and its application
+Authors</h3>
+			<small>Published on May, 2019</small>
+			<p>Indentation techniques are widely employed to measure material hardness by calculating the mean pressure within contact area. This paper reassesses the spherical indentation of an elastic–perfectly plastic material through finite element analysis, but focuses mainly on the variation of mean pressure at deep indentation. In the fully plastic deformation regime, our results reveal that the pressure does not decrease monotonously, but increases again after reaching a local minimum value. It is found that this minimum mean pressure is about 2.23 times of the yield strength and independent of any other material parameters. Moreover, the contact radius and the indentation depth at this minimum pressure are determined analytically. This work can be readily used to measure the strength of materials by indentation tests.</p>
+			<a href="https://www.sciencedirect.com/science/article/pii/S2352431618302591" target="_black">Paper Link</a>
+		</article>
+	</section>
+	
+
+</body>
+</html>
